@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1078A89D22054CE7004B686C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1078A89C22054CE7004B686C /* AppDelegate.swift */; };
-		1078A89F22054CE7004B686C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1078A89E22054CE7004B686C /* ViewController.swift */; };
 		1078A8A222054CE7004B686C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1078A8A022054CE7004B686C /* Main.storyboard */; };
 		1078A8A522054CE7004B686C /* PetrolMate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1078A8A322054CE7004B686C /* PetrolMate.xcdatamodeld */; };
 		1078A8A722054CE9004B686C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1078A8A622054CE9004B686C /* Assets.xcassets */; };
 		1078A8AA22054CE9004B686C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1078A8A822054CE9004B686C /* LaunchScreen.storyboard */; };
 		1078A8B522054CE9004B686C /* PetrolMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1078A8B422054CE9004B686C /* PetrolMateTests.swift */; };
 		1078A8C022054CE9004B686C /* PetrolMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1078A8BF22054CE9004B686C /* PetrolMateUITests.swift */; };
+		1078A8CE2205513E004B686C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1078A8CD2205513E004B686C /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,6 @@
 /* Begin PBXFileReference section */
 		1078A89922054CE7004B686C /* PetrolMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetrolMate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1078A89C22054CE7004B686C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1078A89E22054CE7004B686C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1078A8A122054CE7004B686C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1078A8A422054CE7004B686C /* PetrolMate.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetrolMate.xcdatamodel; sourceTree = "<group>"; };
 		1078A8A622054CE9004B686C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		1078A8BB22054CE9004B686C /* PetrolMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetrolMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1078A8BF22054CE9004B686C /* PetrolMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrolMateUITests.swift; sourceTree = "<group>"; };
 		1078A8C122054CE9004B686C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1078A8CD2205513E004B686C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				1078A89C22054CE7004B686C /* AppDelegate.swift */,
-				1078A89E22054CE7004B686C /* ViewController.swift */,
 				1078A8A022054CE7004B686C /* Main.storyboard */,
+				1078A8CF22055147004B686C /* ViewControllers */,
 				1078A8A622054CE9004B686C /* Assets.xcassets */,
 				1078A8A822054CE9004B686C /* LaunchScreen.storyboard */,
 				1078A8AB22054CE9004B686C /* Info.plist */,
@@ -126,6 +126,14 @@
 				1078A8C122054CE9004B686C /* Info.plist */,
 			);
 			path = PetrolMateUITests;
+			sourceTree = "<group>";
+		};
+		1078A8CF22055147004B686C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1078A8CD2205513E004B686C /* MainViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1078A89F22054CE7004B686C /* ViewController.swift in Sources */,
 				1078A89D22054CE7004B686C /* AppDelegate.swift in Sources */,
 				1078A8A522054CE7004B686C /* PetrolMate.xcdatamodeld in Sources */,
+				1078A8CE2205513E004B686C /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +451,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.davidphillips.PetrolMate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidphillips.petrolmate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,7 +469,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.davidphillips.PetrolMate;
+				PRODUCT_BUNDLE_IDENTIFIER = com.davidphillips.petrolmate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
