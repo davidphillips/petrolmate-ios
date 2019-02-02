@@ -1,1 +1,1 @@
-# petrolmate-ios
+# PetrolMate for iOS
